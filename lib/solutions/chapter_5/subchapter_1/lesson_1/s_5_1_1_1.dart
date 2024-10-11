@@ -23,20 +23,20 @@ class _S5111State extends State<S5111> {
         ),
         Container(
           //color: Colors.amber,
-          width: 150,
+          width: 250,
           child: Row(
             children: [
               Container(
-                height: 50,
-                width: 50,
+                height: 100,
+                width: 100,
                 color: switchOn ? color[0] : color[1],
               ),
               SizedBox(
                 width: 50,
               ),
               Container(
-                height: 50,
-                width: 50,
+                height: 100,
+                width: 100,
                 color: switchOn ? color[1] : color[0],
               )
             ],
