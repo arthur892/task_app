@@ -34,19 +34,26 @@ class MyText extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final styleTitle = Theme.of(context).textTheme.titleMedium;
+    TextStyle labelMedium = TextStyle(fontSize: 20);
+    TextStyle bodyMedium = TextStyle(fontSize: 15);
+
     return Padding(
       padding: const EdgeInsets.all(8.0),
       child: Column(children: [
         Text(
           title,
-          style: styleTitle,
+          style: labelMedium,
         ),
         Text(
           text,
-          style: Theme.of(context).textTheme.bodyMedium,
+          style: bodyMedium,
         ),
       ]),
     );
   }
 }
+
+ThemeData myStyle = ThemeData(
+    textTheme: TextTheme(
+        labelMedium: TextStyle(fontSize: 20),
+        bodyMedium: TextStyle(fontSize: 15)));
